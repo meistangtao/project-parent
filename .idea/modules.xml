@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/activeMQDemo/activeMQDemo.iml" filepath="$PROJECT_DIR$/activeMQDemo/activeMQDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo.iml" filepath="$PROJECT_DIR$/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sm-micro-service/sm-micro-service.iml" filepath="$PROJECT_DIR$/sm-micro-service/sm-micro-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springbootdemo/springbootdemo.iml" filepath="$PROJECT_DIR$/springbootdemo/springbootdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weixinpaydemo/weixinpaydemo.iml" filepath="$PROJECT_DIR$/weixinpaydemo/weixinpaydemo.iml" />
+    </modules>
+  </component>
+</project>
