@@ -11,6 +11,8 @@
     <modules>
         <module>activeMQDemo</module>
         <module>weixinpaydemo</module>
+        <module>springbootdemo</module>
+        <module>sm-micro-service</module>
     </modules>
     <dependencies>
       <!--  <dependency>
