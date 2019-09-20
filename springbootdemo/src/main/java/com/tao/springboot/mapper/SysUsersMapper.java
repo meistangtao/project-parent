@@ -3,10 +3,14 @@ package com.tao.springboot.mapper;
 import com.tao.springboot.bean.SysUsers;
 import com.tao.springboot.bean.SysUsersExample;
 import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
+import org.apache.kafka.common.protocol.types.Field;
 import org.springframework.stereotype.Repository;
 
-@Repository
+//@Mapper
 public interface SysUsersMapper {
     long countByExample(SysUsersExample example);
 
@@ -18,7 +22,12 @@ public interface SysUsersMapper {
 
     List<SysUsers> selectByExample(SysUsersExample example);
 
+    @Select("select * from sys_users where username=#{username}")
+    List<SysUsers> selectByUsername(String username);
+
     int updateByExampleSelective(@Param("record") SysUsers record, @Param("example") SysUsersExample example);
 
     int updateByExample(@Param("record") SysUsers record, @Param("example") SysUsersExample example);
+
+
 }

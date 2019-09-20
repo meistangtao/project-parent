@@ -28,13 +28,4 @@
         <setting name="jdbcTypeForNull" value="NULL"/>
         <!--  <setting name="enhancementEnabled" value="false"/> -->
     </settings>
-
-
-    <mappers>
-        <mapper resource="mapper/SysUsersMapper.xml"/>
-<!--        <mapper resource="mapper/UserMapper.xml"/>-->
-<!--        <mapper resource="mapper/UserMapper.xml"/>-->
-<!--        <mapper resource="mapper/UserMapper.xml"/>-->
-<!--        <mapper resource="mapper/UserMapper.xml"/>-->
-    </mappers>
 </configuration>

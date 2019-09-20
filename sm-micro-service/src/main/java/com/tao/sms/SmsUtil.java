@@ -13,6 +13,7 @@ import org.springframework.stereotype.Component;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -87,7 +88,7 @@ public class SmsUtil {
         //组装请求对象
         QuerySendDetailsRequest request = new QuerySendDetailsRequest();
         //必填-号码
-        request.setPhoneNumber("15096641898");
+        request.setPhoneNumber("15087662661");
         //可选-流水号
         request.setBizId(bizId);
         //必填-发送日期 支持30天内记录查询，格式yyyyMMdd
@@ -104,11 +105,12 @@ public class SmsUtil {
         return querySendDetailsResponse;
     }
 
-   /* public static void main(String[] args) throws ClientException, InterruptedException {
+    public static void main(String[] args) throws ClientException, InterruptedException {
         SmsUtil smsUtil = new SmsUtil();
-
+        HashMap<String, String> map = new HashMap<>();
+        map.put("phone","15087662661");
         //发短信
-        SendSmsResponse response = smsUtil.sendSms();
+        SendSmsResponse response = smsUtil.sendSms(map);
         System.out.println("短信接口返回的数据----------------");
         System.out.println("Code=" + response.getCode());
         System.out.println("Message=" + response.getMessage());
@@ -140,5 +142,5 @@ public class SmsUtil {
             System.out.println("RequestId=" + querySendDetailsResponse.getRequestId());
         }
 
-    }*/
+    }
 }

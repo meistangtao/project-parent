@@ -34,10 +34,11 @@ spring:
       # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
       connect-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
 
-mybatis:
-  type-aliases-package: com.tao.springboot.bean
-  mapper-location: classpath:mapper/*.xml
-  #config-location: classpath:mybatis-config.xml
+# yml文件中配置扫描不到 mapper接口。版本问题？还是什么原因？
+#mybatis:
+#  type-aliases-package: com.tao.springboot.bean
+#  mapper-location: classpath:/mapper/*.xml
+#  config-location: classpath:mybatis-config.xml
 
 logging:
   level:

@@ -26,6 +26,19 @@ public class UserInfoController {
     public List<SysUsers> getInfo(String username){
         logger.debug("username={}",username);
 
+//        SysUsersExample example=new SysUsersExample();
+//        SysUsersExample.Criteria criteria = example.createCriteria();
+//        criteria.andUsernameEqualTo(username);
+
+        List<SysUsers> info = sysUsersMapper.selectByUsername(username);
+        logger.debug("info={}", info);
+        return info;
+    }
+
+    @RequestMapping("/123")
+    public List<SysUsers> getInfo1(String username){
+        logger.debug("username={}",username);
+
         SysUsersExample example=new SysUsersExample();
         SysUsersExample.Criteria criteria = example.createCriteria();
         criteria.andUsernameEqualTo(username);
@@ -33,10 +46,5 @@ public class UserInfoController {
         List<SysUsers> info = sysUsersMapper.selectByExample(example);
         logger.debug("info={}", info);
         return info;
-    }
-
-    @RequestMapping("/123")
-    public String getInfo1(){
-        return "username";
     }
 }
