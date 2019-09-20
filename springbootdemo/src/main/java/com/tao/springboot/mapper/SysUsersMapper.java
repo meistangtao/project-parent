@@ -7,10 +7,8 @@ import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
-import org.apache.kafka.common.protocol.types.Field;
-import org.springframework.stereotype.Repository;
 
-//@Mapper
+@Mapper
 public interface SysUsersMapper {
     long countByExample(SysUsersExample example);
 
