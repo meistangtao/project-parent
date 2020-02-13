@@ -28,4 +28,5 @@
         <setting name="jdbcTypeForNull" value="NULL"/>
         <!--  <setting name="enhancementEnabled" value="false"/> -->
     </settings>
+
 </configuration>
