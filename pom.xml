@@ -5,13 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.tao</groupId>
-    <artifactId>demo</artifactId>
+    <artifactId>project-parent</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>activeMQDemo</module>
-        <module>weixinpaydemo</module>
-        <module>springbootdemo</module>
+        <module>activeMQ</module>
+        <module>weixinpay</module>
+        <module>springboot</module>
         <module>sm-micro-service</module>
         <module>generator</module>
         <module>NIO</module>
