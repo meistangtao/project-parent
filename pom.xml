@@ -11,7 +11,7 @@
     <modules>
         <module>activeMQ</module>
         <module>weixinpay</module>
-        <module>springboot</module>
+        <module>springboot-mybatis</module>
         <module>sm-micro-service</module>
         <module>generator</module>
         <module>NIO</module>

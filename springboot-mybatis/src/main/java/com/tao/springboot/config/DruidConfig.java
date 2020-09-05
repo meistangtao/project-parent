@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class DruidConfig {
+
     private static Logger logger= LoggerFactory.getLogger(DruidConfig.class);
 
     @Bean
